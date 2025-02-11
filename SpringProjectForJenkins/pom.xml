@@ -248,7 +248,7 @@
 					<webXml>src/main/webapp/WEB-INF/web.xml</webXml>
 				</configuration>
 			</plugin>
-			<plugin>
+		<!--<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<version>1.1</version>
@@ -258,7 +258,7 @@
 					<username>tomcat</username>
 					<password>tomcat</password>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
   </build>
 </project>
