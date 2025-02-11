@@ -10,8 +10,6 @@ name: Java CI with Maven
 
 on:push:
 branches: [ "main" ]
-pull_request:
-branches: [ "main" ]
 
 jobs:build:
 runs-on: ubuntu-latest
@@ -24,12 +22,8 @@ java-version: '17'
 distribution: 'temurin'
 cache: maven
 
-    - name: Build with Mavenrun: mvn clean install -DskipTests -f ./SpringProjectForJenkins/pom.xml
+- name: Build with Mavenrun: mvn clean install -DskipTests -f ./SpringProjectForJenkins/pom.xml
 
-    - name: Deploy to Tomcat Serverrun: |
+- name: Deploy to Tomcat Serverrun: |
 mvn tomcat:deploy -DskipTests -f ./SpringProjectForJenkins/pom.xml || \
 mvn tomcat:redeploy -DskipTests -f ./SpringProjectForJenkins/pom.xml
-env:
-TOMCAT_USERNAME: tomcat
-TOMCAT_PASSWORD: tomcat
-TOMCAT_URL: 'https://5922-14-36-141-71.ngrok-free.app/manager/text'
