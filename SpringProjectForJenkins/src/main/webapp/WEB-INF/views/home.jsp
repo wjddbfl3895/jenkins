@@ -15,6 +15,7 @@
 		<h3>${result}</h3>
 		<h3>home.jsp에 작업 추가했습니다.</h3>
 		<h3>야호</h3>
+		<h3>OCI</h3>
 	</div>
 </body>
 </html>
